@@ -1,58 +1,141 @@
-#banner-elem {
-background-image:url("images/sheep-pic.jpg") ;
-background-position:center;
-background-size: 100% 100%;
-background-repeat: no-repeat;
-background-position-x: center;
-height: 400px;
-width: 100%;
-border: #1f4a07 solid 2px;
+@media (max-width: 500px) {
+  /* Mobile Styles */
+  #main-elem{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#Main-img{
+  width: 100%;
+}
+
+
+
+
+
+
+
 
 
 }
 
-/* change to menu drop down that hides motto and displays nav */
-#main-nav a{
-  text-decoration:underline;
-  color:#1f4a07 ;
-  font-size: 1.5em;
-  font-weight: bolder;
+
+@media (min-width:500px){
+/* Larger screen styles */
+#main-nav a:hover{
+  color: #F2E8CF;
+}
+#about-us{
+  background-color: #1e4a07a0;
+  margin: 2px;
+  padding: 5px;
+}
 
 
+.menu-button:hover{
+  color: #F2E8CF;
+}
 
+.hidden{
+  display: none;
+  transition-duration: 0.75s;
 }
 ul{
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+  font-family: "Uncial Antiqua", sans-serif;
 }
 
 #main-elem{
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.small-img {
+
+transition: border 0.75s;
+
+}
+#Main-img{
+  width: 300px;
+  max-height: 400px;
+}
+
+
+
+
+
+
+
+.small-img:hover{
+ border: #1e4a0791 solid 10px;
+}
+#main-nav a{
+  text-decoration:underline;
+  color:whitesmoke ;
+  font-size: 3em;
+  font-weight: bolder;
+
+
 
 }
 
+}
+
+body{
+background-color: #F2E8CF;
+
+}
+ #banner-elem {
+  background-image:url("images/sheep-pic.jpg") ;
+  background-position:center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 400px;
+  width: 100%;
+  border: #1f4a07 solid 2px;
+ }
+
+ .menu-button{
+  text-decoration:underline;
+  color: whitesmoke ;
+  font-size: 1.5em;
+  font-weight: bolder;
+  border: none;
+  background-color: #1f4a07;
+  margin: 0 auto;
+  display: block;
+  font-family: "Uncial Antiqua", sans-serif;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+  transition-duration: 0.75s;
+}
+.small-img {
+width: 50px;
+height: 50px;
+margin: 8px;
+border: #1f4a07 solid 10px;
+}
 #Main-img {
 display: block;
-margin-left: auto;
-margin-right: auto;
-
 height: auto;
-width: 40%;
 border:#1f4a07 solid 5px;
-
 }
-
 #motto {
   text-align: center;
   color: whitesmoke;
   background-color: #1e4a0785;
-
-
+  font-family: "Uncial Antiqua", sans-serif;
 }
-
+h1{
+  font-family: "Uncial Antiqua", sans-serif;
+}
 #logo {
   text-align: center;
   color: #1f4a07;
@@ -61,15 +144,6 @@ border:#1f4a07 solid 5px;
   font-size: 3.5em;
   text-decoration: underline;
 }
-
-.small-img {
-width: 50px;
-height: 50px;
-margin: 8px;
-border: #1f4a07 solid 10px;
-
-}
-
-body{
-background-color: #F2E8CF;
+#about-us{
+  background-color: #1e4a07a0;
 }
