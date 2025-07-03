@@ -31,6 +31,8 @@ function init() {
     const imgElem = document.getElementById(imgId);
     imgElem.addEventListener("mouseover", () => imgSwap(imgSrc) );
     imgElem.addEventListener("mouseout", imgSwapBack);
+    imgElem.addEventListener("touchstart", () => imgSwap(imgSrc) );
+    imgElem.addEventListener("touchcancel", imgSwapBack);
   });
 
 }
