@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 426px) {
   /* Mobile Styles */
   #main-elem{
     flex-wrap: wrap;
@@ -12,7 +12,7 @@
 
 #main-nav a {
 font-size: 2.5em;
-padding-bottom: 20px;
+padding-bottom: 40px;
 padding-right: 35px;
 color: white;
 
@@ -35,7 +35,7 @@ color: white;
 }
 
 
-@media (min-width:500px){
+@media (min-width:426px){
 /* Larger screen styles */
 #main-nav a:hover{
   color: #F2E8CF;
@@ -75,7 +75,7 @@ transition: border 0.75s;
 #Main-img{
   width: 300px;
   min-width: 300px;
-  max-height: 400px;
+  max-height: 350px;
 }
 
 
@@ -98,6 +98,7 @@ transition: border 0.75s;
 /* Universal styles */
 body{
 background-color: #F2E8CF;
+font-family: sans-serif;
 
 }
  #banner-elem {
@@ -148,6 +149,9 @@ border:#1f4a07 solid 5px;
 h1{
   font-family: "Uncial Antiqua", sans-serif;
 }
+h2{
+  font-family: "Uncial Antiqua", sans-serif;
+}
 #logo {
   text-align: center;
   color: #1f4a07;
@@ -163,4 +167,69 @@ h1{
 ul{
   list-style: none;
   font-family: "Uncial Antiqua", sans-serif;
+}
+
+#form-elem{
+  background-color: #0000004f;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #0000007c;
+  align-self: center;
+
+}
+#name-box{
+  margin:  10px;
+  width: 75px;
+  align-self: center;
+}
+#email-box{
+  margin: 10px;
+  width: 90px;
+  align-self: center;
+
+
+}
+#textbox{
+  margin: 10px;
+  width: 200px;
+  align-self: center;
+
+}
+.form-submit-button{
+  width: 75px;
+  align-self: center;
+  background-color: #1f4a07;
+  color: #F2E8CF;
+  box-shadow: black 2px, ;
+  margin-bottom: 10px;
+}
+.input-box{
+  background-color: #F2E8CF;
+  border: #1f4a07 5px solid;
+  color: #1f4a07;
+}
+.input-box:focus{
+  background-color: #1f4a07;
+  color: #F2E8CF;
+}
+#footer {
+  background-color: #1f4a07;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#copyright{
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: smaller;
+  padding: 5px;
+  color: black;
 }
