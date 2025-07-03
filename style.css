@@ -8,13 +8,24 @@
   width: 100%;
 
 }
+
+
 #main-nav a {
+font-size: 2.5em;
+padding-bottom: 20px;
+padding-right: 35px;
+color: white;
 
 
 }
 
 
-
+#main-nav a:focus{
+  color: #F2E8CF;
+}
+.menu-button:focus{
+  color: #F2E8CF;
+}
 
 
 
@@ -84,7 +95,7 @@ transition: border 0.75s;
 }
 
 }
-
+/* Universal styles */
 body{
 background-color: #F2E8CF;
 
@@ -115,7 +126,7 @@ background-color: #F2E8CF;
 
 .hidden{
   display: none;
-  transition-duration: 0.75s;
+
 }
 .small-img {
 width: 50px;
