@@ -6,6 +6,11 @@
 }
 #Main-img{
   width: 100%;
+
+}
+#main-nav a {
+
+
 }
 
 
@@ -40,11 +45,9 @@
   transition-duration: 0.75s;
 }
 ul{
-  list-style: none;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  font-family: "Uncial Antiqua", sans-serif;
 }
 
 #main-elem{
@@ -60,6 +63,7 @@ transition: border 0.75s;
 }
 #Main-img{
   width: 300px;
+  min-width: 300px;
   max-height: 400px;
 }
 
@@ -77,9 +81,6 @@ transition: border 0.75s;
   color:whitesmoke ;
   font-size: 3em;
   font-weight: bolder;
-
-
-
 }
 
 }
@@ -146,4 +147,9 @@ h1{
 }
 #about-us{
   background-color: #1e4a07a0;
+  box-shadow: 10px, 10px, 10px, black;
+}
+ul{
+  list-style: none;
+  font-family: "Uncial Antiqua", sans-serif;
 }
