@@ -1,109 +1,109 @@
 @media (max-width: 426px) {
   /* Mobile Styles */
-  #main-elem{
+  #main-elem {
     flex-wrap: wrap;
     flex-direction: column;
-}
-#Main-img{
-  width: 100%;
+  }
+  #Main-img {
+    width: 100%;
+
+  }
+
+
+  .main-nav a {
+    font-size: 2.5em;
+    padding-bottom: 40px;
+    padding-right: 35px;
+    color: white;
+
+
+  }
+
+  .main-nav a:focus {
+    color: #F2E8CF;
+  }
+  .menu-button:focus {
+    color: #F2E8CF;
+  }
 
 }
 
 
-.main-nav a {
-font-size: 2.5em;
-padding-bottom: 40px;
-padding-right: 35px;
-color: white;
+@media (min-width:426px) {
+  /* Larger screen styles */
+  .main-nav a:hover {
+    color: #F2E8CF;
+  }
+  #about-us {
+    background-color: #1e4a07a0;
+    margin: 2px;
+    padding: 5px;
+  }
 
 
-}
+  .menu-button:hover {
+    color: #F2E8CF;
+  }
 
-.main-nav a:focus{
-  color: #F2E8CF;
-}
-.menu-button:focus{
-  color: #F2E8CF;
-}
+  .hidden {
+    display: none;
+    transition-duration: 0.75s;
+  }
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
 
-}
+  #main-elem {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
 
+  .small-img {
 
-@media (min-width:426px){
-/* Larger screen styles */
-.main-nav a:hover{
-  color: #F2E8CF;
-}
-#about-us{
-  background-color: #1e4a07a0;
-  margin: 2px;
-  padding: 5px;
-}
+    transition: border 0.75s;
 
+  }
+  #Main-img {
+    width: 300px;
+    min-width: 300px;
+    max-height: 350px;
+  }
 
-.menu-button:hover{
-  color: #F2E8CF;
-}
-
-.hidden{
-  display: none;
-  transition-duration: 0.75s;
-}
-ul{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-}
-
-#main-elem{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-
-.small-img {
-
-transition: border 0.75s;
-
-}
-#Main-img{
-  width: 300px;
-  min-width: 300px;
-  max-height: 350px;
-}
-
-.small-img:hover{
- border: #1e4a0791 solid 10px;
-}
-.main-nav a{
-  text-decoration:underline;
-  color:whitesmoke ;
-  font-size: 3em;
-  font-weight: bolder;
-}
+  .small-img:hover {
+    border: #1e4a0791 solid 10px;
+  }
+  .main-nav a {
+    text-decoration: underline;
+    color: whitesmoke;
+    font-size: 3em;
+    font-weight: bolder;
+  }
 
 }
 
 
 /* Universal styles */
-body{
-background-color: #F2E8CF;
-font-family: sans-serif;
+body {
+  background-color: #F2E8CF;
+  font-family: sans-serif;
 
 }
- #banner-elem {
-  background-image:url("images/sheep-pic.jpg") ;
-  background-position:center;
+#banner-elem {
+  background-image: url("images/sheep-pic.jpg");
+  background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position-x: center;
   height: 400px;
   width: 100%;
   border: #1f4a07 solid 2px;
- }
- .menu-button{
-  text-decoration:underline;
-  color: whitesmoke ;
+}
+.menu-button {
+  text-decoration: underline;
+  color: whitesmoke;
   font-size: 1.5em;
   font-weight: bolder;
   border: none;
@@ -113,20 +113,20 @@ font-family: sans-serif;
   font-family: "Uncial Antiqua", sans-serif;
   cursor: pointer;
 }
-.hidden{
+.hidden {
   display: none;
 
 }
 .small-img {
-width: 50px;
-height: 50px;
-margin: 8px;
-border: #1f4a07 solid 10px;
+  width: 50px;
+  height: 50px;
+  margin: 8px;
+  border: #1f4a07 solid 10px;
 }
 #Main-img {
-display: block;
-height: auto;
-border:#1f4a07 solid 5px;
+  display: block;
+  height: auto;
+  border: #1f4a07 solid 5px;
 }
 #motto {
   text-align: center;
@@ -134,10 +134,10 @@ border:#1f4a07 solid 5px;
   background-color: #1e4a0785;
   font-family: "Uncial Antiqua", sans-serif;
 }
-h1{
+h1 {
   font-family: "Uncial Antiqua", sans-serif;
 }
-h2{
+h2 {
   font-family: "Uncial Antiqua", sans-serif;
 }
 #logo {
@@ -148,16 +148,16 @@ h2{
   font-size: 3.5em;
   text-decoration: underline;
 }
-#about-us{
+#about-us {
   background-color: #1e4a07a0;
   box-shadow: 10px, 10px, 10px, black;
 }
-ul{
+ul {
   list-style: none;
   font-family: "Uncial Antiqua", sans-serif;
 }
 
-#form-elem{
+#form-elem {
   background-color: #0000004f;
   text-align: center;
   display: block;
@@ -170,25 +170,25 @@ form {
   align-self: center;
 
 }
-#name-box{
-  margin:  10px;
+#name-box {
+  margin: 10px;
   width: 75px;
   align-self: center;
 }
-#email-box{
+#email-box {
   margin: 10px;
   width: 90px;
   align-self: center;
 
 
 }
-#textbox{
+#textbox {
   margin: 10px;
   width: 200px;
   align-self: center;
 
 }
-.form-submit-button{
+.form-submit-button {
   width: 75px;
   align-self: center;
   background-color: #1f4a07;
@@ -196,12 +196,12 @@ form {
   box-shadow: black 2px, ;
   margin-bottom: 10px;
 }
-.input-box{
+.input-box {
   background-color: #F2E8CF;
   border: #1f4a07 5px solid;
   color: #1f4a07;
 }
-.input-box:focus{
+.input-box:focus {
   background-color: #1f4a07;
   color: #F2E8CF;
 }
@@ -213,7 +213,7 @@ form {
   flex-wrap: wrap;
 }
 
-#copyright{
+#copyright {
   text-align: center;
   text-decoration: underline;
   font-weight: bolder;
@@ -222,19 +222,19 @@ form {
   color: white;
 }
 
-.success-msg{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-flex-wrap: nowrap;
-margin-top: 50px;
-text-align: center;
+.success-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+  text-align: center;
 
 
 }
 
-.success-heading{
-font-size: 3em;
+.success-heading {
+  font-size: 3em;
 
 }
