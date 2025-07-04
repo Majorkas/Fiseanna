@@ -221,3 +221,20 @@ form {
   padding: 5px;
   color: white;
 }
+
+.success-msg{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+flex-wrap: nowrap;
+margin-top: 50px;
+text-align: center;
+
+
+}
+
+.success-heading{
+font-size: 3em;
+
+}
