@@ -238,3 +238,19 @@ form {
   font-size: 3em;
 
 }
+
+.shop-elem{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+text-align: center;
+
+}
+.shop-item{
+  max-width: 200px;
+  max-height: 250px;
+}
+.shop-img{
+  max-width: 150px;
+  max-height: 200px;
+}
