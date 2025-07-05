@@ -244,13 +244,24 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 text-align: center;
+background-color: #1e4a078d;
 
 }
 .shop-item{
-  max-width: 200px;
-  max-height: 250px;
+  max-width: 300px;
+  max-height: 350px;
+  margin: 25px;
+  border: #1f4a07 groove 5px;
+  background-color: #1f4a07;
+  color: antiquewhite;
+  transition: all 0.75s;
+
+}
+.shop-item:hover{
+  border: #1e4a0780 groove 10px;
+  color: #F2E8CF
 }
 .shop-img{
-  max-width: 150px;
-  max-height: 200px;
+  max-width: 250px;
+  max-height: 300px;
 }
