@@ -103,6 +103,28 @@ function redirectPage() {
     window.location = 'index.html';
   }
 }
+let shipToIreland = 4.99
+let shipToUK = 8.99
+let shipToEurope = 5.50
+let shipToWorld = 9.99
+let importFees = 0.2
+let address = document.getElementById('shipping-location')
+let selectedAddress = address.options[address.selectedIndex].text;
+function shippingCalcultor(selectedAddress) {
+  document.getElementById('drop-selection').innerText = selectedAddress.options[address.selectedIndex].text;
+  let selection = selectedAddress.value
+  console.log(selection)
+    if (selection === "1") {
+      document.getElementById('calculator-output').innerText = shipToIreland.toFixed(2);
+    } else if (selection === "2") {
+      document.getElementById('calculator-output').innerText = shipToUK + ' with Import Fees the total will be ' + '€' +((shipToUK * importFees)+shipToUK).toFixed(2);
+    } else if (selection === "3") {
+      document.getElementById('calculator-output').innerText = shipToEurope.toFixed(2);
+    } else if (selection === "4") {
+      document.getElementById('calculator-output').innerText = shipToWorld + ' with Import Fees the total will be ' + '€' + ((shipToWorld * importFees)+shipToWorld).toFixed(2);
+    }
+
+}
 
 
 
@@ -128,7 +150,10 @@ function initStore() {
     mainNav.classList.toggle('hidden');
     mottoTxt.classList.toggle('hidden');
 
-  });
+ });
+  shippingCalcultor(address)
+  document.getElementById('shipping-calculator').addEventListener('change', () => shippingCalcultor(address))
+
 
 
 }
