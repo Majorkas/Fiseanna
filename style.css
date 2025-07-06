@@ -211,6 +211,7 @@ form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  color: white;
 }
 
 #copyright {
@@ -264,4 +265,8 @@ background-color: #1e4a078d;
 .shop-img{
   max-width: 250px;
   max-height: 300px;
+}
+
+.shipping-txt{
+  color: white;
 }
