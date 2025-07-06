@@ -126,6 +126,15 @@ function shippingCalcultor(selectedAddress) {
 
 }
 
+function storeItemInit() {
+ menuButton[0].addEventListener('click', () => {
+    mainNav.classList.toggle('hidden');
+    mottoTxt.classList.toggle('hidden');
+
+  });
+
+}
+
 
 
 
@@ -160,6 +169,6 @@ function initStore() {
 
 function initRedirect() {
 
-setInterval(redirectPage,1000)
+  setInterval(redirectPage, 1000)
 
 }
