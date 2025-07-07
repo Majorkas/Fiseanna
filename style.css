@@ -270,3 +270,28 @@ background-color: #1e4a078d;
 .shipping-txt{
   color: white;
 }
+
+#store-item-imgs{
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.store-footer{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#main-display{
+  width: 350px;
+  height: auto;
+  align-self: center;
+  justify-self: center;
+}
+.img-choice{
+  flex-direction: row;
+  margin: 25px;
+  width: 75px;
+  height: auto;
+}
