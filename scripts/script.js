@@ -1,6 +1,6 @@
 const menuButton = document.getElementsByClassName('menu-button')
-let mainNav = document.getElementById('main-nav')
-let mottoTxt = document.getElementById('motto-text')
+const mainNav = document.getElementById('main-nav')
+const mottoTxt = document.getElementById('motto-text')
 const IMG_ID_SRC = {
   'Main-img': "images/lake.jpg",
   'smaller-img1': "images/black-castle.jpg",
@@ -8,78 +8,6 @@ const IMG_ID_SRC = {
   'smaller-img3': "images/rock.jpg",
   'smaller-img4': "images/bike.jpeg",
 }
-
-// const IMG_ID_SRC_STORE_ITEM_1 = {
-//   'Main-img':
-//   'smaller-img1':
-//   'smaller-img2':
-//   'smaller-img3':
-//   'smaller-img4':
-
-// }
-// const IMG_ID_SRC_STORE_ITEM_2 = {
-//    'Main-img':
-//   'smaller-img1':
-//   'smaller-img2':
-//   'smaller-img3':
-//   'smaller-img4':
-// }
-// const IMG_ID_SRC_STORE_ITEM_3 = {
-//    'Main-img':
-//   'smaller-img1':
-//   'smaller-img2':
-//   'smaller-img3':
-//   'smaller-img4':
-// }
-// const IMG_ID_SRC_STORE_ITEM_4 = {
-//   'Main-img':
-//   'smaller-img1':
-//   'smaller-img2':
-//   'smaller-img3':
-//   'smaller-img4':
-// }
-// const IMG_ID_SRC_STORE_ITEM_5 = {
-//    'Main-img':
-//   'smaller-img1':
-//   'smaller-img2':
-//   'smaller-img3':
-//   'smaller-img4':
-// }
-// const IMG_ID_SRC_STORE_ITEM_6 = {
-//    'Main-img':
-//   'smaller-img1':
-//   'smaller-img2':
-//   'smaller-img3':
-//   'smaller-img4':
-// }
-// const IMG_ID_SRC_STORE_ITEM_7 = {
-//    'Main-img':
-//   'smaller-img1':
-//   'smaller-img2':
-//   'smaller-img3':
-//   'smaller-img4':
-// }
-// const IMG_ID_SRC_STORE_ITEM_8 = {
-//    'Main-img':
-//   'smaller-img1':
-//   'smaller-img2':
-//   'smaller-img3':
-//   'smaller-img4':
-// }
-// const IMG_ID_SRC_STORE_ITEM_9 = {
-//    'Main-img':
-//   'smaller-img1':
-//   'smaller-img2':
-//   'smaller-img3':
-//   'smaller-img4':
-// }
-// const IMG_ID_SRC_STORE_ITEM_10 = {
-//    'Main-img':
-//   'smaller-img1':
-//   'smaller-img2':
-//   'smaller-img3':
-//   'smaller-img4':
-// }
 
 
 
@@ -103,13 +31,13 @@ function redirectPage() {
     window.location = 'index.html';
   }
 }
-let shipToIreland = 4.99
-let shipToUK = 8.99
-let shipToEurope = 5.50
-let shipToWorld = 9.99
-let importFees = 0.2
-let address = document.getElementById('shipping-location')
-let selectedAddress = address.options[address.selectedIndex].text;
+const shipToIreland = 4.99
+const shipToUK = 8.99
+const shipToEurope = 5.50
+const shipToWorld = 9.99
+const importFees = 0.2
+const address = document.getElementById('shipping-location')
+
 function shippingCalcultor(selectedAddress) {
   document.getElementById('drop-selection').innerText = selectedAddress.options[address.selectedIndex].text;
   let selection = selectedAddress.value
@@ -131,7 +59,8 @@ function storeItemInit() {
     mainNav.classList.toggle('hidden');
     mottoTxt.classList.toggle('hidden');
 
-  });
+ });
+
 
 }
 
@@ -162,7 +91,8 @@ function initStore() {
  });
   shippingCalcultor(address)
   document.getElementById('shipping-calculator').addEventListener('change', () => shippingCalcultor(address))
-
+  //* moved selected address here to prevent errors on other pages *//
+  let selectedAddress = address.options[address.selectedIndex].text;
 
 
 }
