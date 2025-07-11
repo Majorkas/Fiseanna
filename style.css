@@ -150,7 +150,7 @@ h2 {
 }
 #about-us {
   background-color: #1e4a07a0;
-  box-shadow: 10px, 10px, 10px, black;
+  color: white;
 }
 ul {
   list-style: none;
@@ -163,7 +163,7 @@ ul {
   display: block;
   margin: 0 auto;
 }
-form {
+#index-form {
   display: flex;
   flex-direction: column;
   background-color: #0000007c;
@@ -282,16 +282,81 @@ background-color: #1e4a078d;
   margin: 0 auto;
   text-align: center;
 }
-
+.main-display-elem{
+  background-color: #1e4a07d3;
+  border: #1f4a07 5px groove;
+  margin: 10px;
+}
 #main-display{
-  width: 350px;
+  display: block;
+  width: 70%;
   height: auto;
   align-self: center;
   justify-self: center;
+  margin-top: 20px;
+  border: #1f4a07 5px solid;
+  margin: 20px;
+
 }
-.img-choice{
-  flex-direction: row;
+.store-small-img-group{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #1e4a079b;
+  border: #1f4a07 5px groove;
+
+}
+.store-small-img{
   margin: 25px;
   width: 75px;
   height: auto;
+  border: #1f4a07 3px groove;
+
+}
+.item-desc{
+background-color: #1e4a0760;
+ border: #1f4a07 3px groove;
+ margin: 20px;
+ color: white;
+
+}
+#item-choice{
+  background-color: #1e4a0781;
+  margin: 10px;
+  border: #1f4a07 3px groove;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.form-item{
+  margin-top: 45px;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: antiquewhite;
+
+}
+#print-size{
+  background-color: #1f4a07;
+  color: antiquewhite;
+}
+#store-submit{
+  background-color: #1f4a07;
+  color: antiquewhite;
+}
+#item-price {
+font-size: 1.5em;
+display: block;
+border: #1f4a07 solid 2px;
+padding: 5px;
+text-align: center;
+color: antiquewhite;
+
+
+}
+.store-item-desc{
+  margin-left: 20px;
 }
