@@ -1,6 +1,7 @@
 const menuButton = document.getElementsByClassName('menu-button')
 const mainNav = document.getElementById('main-nav')
 const mottoTxt = document.getElementById('motto-text')
+const COST_CALCULATOR = document.getElementById('item-choice')
 const IMG_ID_SRC = {
   'Main-img': "images/lake.jpg",
   'smaller-img1': "images/black-castle.jpg",
@@ -54,15 +55,61 @@ function shippingCalcultor(selectedAddress) {
 
 }
 
+const SMALL_PRINT = 6
+const MEDIUM_PRINT = 8
+const LARGE_PRINT = 12
+const XLARGE_PRINT = 16
+const WITH_FRAME = 9.99
+const NO_FRAME = 0
+function runFullCalculation(event) {
+  if (event) {
+    event.preventDefault();
+  }
+
+  const sizeSelection = document.getElementById('print-size').options[document.getElementById('print-size').selectedIndex].text;
+  const addFrame = document.getElementById('check').checked;
+
+  const printPrice = printPriceF(sizeSelection);
+  const framePrice = framePriceF(addFrame);
+
+  const finalPrice = (printPrice + framePrice)
+  outputToSpan('item-price', finalPrice.toFixed(2))
+}
+function outputToSpan(spanId, value) {
+  document.getElementById(spanId).innerText = "€" + value;
+}
+
+function printPriceF(sizeSelection) {
+  if (sizeSelection === '11"x17"') {
+    return SMALL_PRINT;
+  } else if (sizeSelection === '18"x24"' ) {
+    return MEDIUM_PRINT;
+  } else if (sizeSelection === '24"x36"') {
+    return LARGE_PRINT;
+  } else if (sizeSelection === '27"x40"') {
+    return XLARGE_PRINT;
+  }
+}
+
+function framePriceF(addFrame) {
+  const FRAME = addFrame ? WITH_FRAME : NO_FRAME;
+  return FRAME;
+}
+
+
 function storeItemInit() {
- menuButton[0].addEventListener('click', () => {
+  menuButton[0].addEventListener('click', () => {
     mainNav.classList.toggle('hidden');
     mottoTxt.classList.toggle('hidden');
 
- });
+  });
+  COST_CALCULATOR.addEventListener('submit', runFullCalculation)
+  runFullCalculation();
+
 
 
 }
+
 
 
 
