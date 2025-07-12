@@ -138,8 +138,7 @@ function initStore() {
  });
   shippingCalcultor(address)
   document.getElementById('shipping-calculator').addEventListener('change', () => shippingCalcultor(address))
-  //* moved selected address here to prevent errors on other pages *//
-  let selectedAddress = address.options[address.selectedIndex].text;
+
 
 
 }
