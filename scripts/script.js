@@ -91,8 +91,13 @@ function printPriceF(sizeSelection) {
   }
 }
 
+const FRAME_PIC = "../images/blackcastle-framed.PNG"
+const NO_FRAME_PIC = "../images/black-castle.jpg"
+// let mainImgSrc = document.getElementById('main-display').src
+
 function framePriceF(addFrame) {
   const FRAME = addFrame ? WITH_FRAME : NO_FRAME;
+  document.getElementById('main-display').src = addFrame ? FRAME_PIC : NO_FRAME_PIC;
   return FRAME;
 }
 
