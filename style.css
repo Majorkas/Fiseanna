@@ -294,7 +294,7 @@ background-color: #1e4a078d;
   align-self: center;
   justify-self: center;
   margin-top: 20px;
-  border: #1f4a07 5px solid;
+  border: #1f4a07 5px inset;
   margin: 20px;
 
 }
@@ -359,4 +359,10 @@ color: antiquewhite;
 }
 .store-item-desc{
   margin-left: 20px;
+}
+
+.pub-print{
+  text-align: center;
+  color: antiquewhite;
+  text-decoration: underline;
 }
