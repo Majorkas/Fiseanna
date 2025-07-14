@@ -91,8 +91,8 @@ function printPriceF(sizeSelection) {
   }
 }
 
-const FRAME_PIC = "../images/blackcastle-framed.PNG"
-const NO_FRAME_PIC = "../images/black-castle.jpg"
+const FRAME_PIC = document.getElementById('framed-img').src
+const NO_FRAME_PIC = document.getElementById('no-frame').src
 
 function framePriceF(addFrame) {
   const FRAME = addFrame ? WITH_FRAME : NO_FRAME;
