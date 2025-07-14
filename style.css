@@ -366,3 +366,6 @@ color: antiquewhite;
   color: antiquewhite;
   text-decoration: underline;
 }
+.store-item-copyright{
+  border: #1f4a07 outset 3px;
+}
