@@ -14,7 +14,7 @@ const IMG_ID_SRC = {
 
 
 
-let mainImg = document.getElementById('Main-img');
+const mainImg = document.getElementById('Main-img');
 function imgSwap(imgSrc) {
   mainImg.src = imgSrc;
 
