@@ -72,4 +72,4 @@ I then repeated it so that when the user had the add frame selection checked it 
 
 
 ## Closing Thoughts: 
-All in all I had alot of fun building this site and coming up with the different interactive elements and I cant wait to build on my knowledge and continue to build this site to be a fully functioning store for my Brother and his Partner
+All in all I had alot of fun building this site and coming up with the different interactive elements and I can't wait to build on my knowledge and continue to build this site to be a fully functioning store for my Brother and his Partner.
