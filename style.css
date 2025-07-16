@@ -251,6 +251,7 @@ background-color: #1e4a078d;
 .shop-item{
   max-width: 300px;
   max-height: 350px;
+  padding-bottom: 15px;
   margin: 25px;
   border: #1f4a07 groove 5px;
   background-color: #1f4a07;
@@ -282,6 +283,7 @@ background-color: #1e4a078d;
   margin: 0 auto;
   text-align: center;
 }
+
 .main-display-elem{
   background-color: #1e4a07d3;
   border: #1f4a07 5px groove;
@@ -361,7 +363,7 @@ color: antiquewhite;
   margin-left: 20px;
 }
 
-.pub-print{
+.print-desc{
   text-align: center;
   color: antiquewhite;
   text-decoration: underline;
