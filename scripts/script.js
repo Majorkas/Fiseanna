@@ -95,9 +95,12 @@ function printPriceF(sizeSelection) {
 
 function framePriceF(addFrame) {
   const FRAME_PIC = document.getElementById('framed-img').src
+  const FRAME_PIC_ALT = document.getElementById('framed-img').alt
   const NO_FRAME_PIC = document.getElementById('no-frame').src
+  const NO_FRAME_PIC_ALT = document.getElementById('no-frame').alt
   const FRAME = addFrame ? WITH_FRAME : NO_FRAME;
   document.getElementById('main-display').src = addFrame ? FRAME_PIC : NO_FRAME_PIC;
+  document.getElementById('main-display').alt = addFrame ? FRAME_PIC_ALT : NO_FRAME_PIC_ALT
   return FRAME;
 }
 
