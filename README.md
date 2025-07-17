@@ -61,16 +61,12 @@ I then repeated it so that when the user had the add frame selection checked it 
 
 ## Site Map: 
 ![site map](/site-map/site-map-fiseanna.JPG)
-<!-- <img src="./site-map\site-map-fiseanna.JPG"> -->
 ---
-<!-- ![index page map](./site-map\index-page.JPG) -->
-<img src="./site-map\index-page.JPG">
+![index page map](/site-map/index-page.JPG)
 ---
-<!-- ![store page map](./site-map\store-page.JPG) -->
-<img src="./site-map\store-page.JPG">
+![store page map](/site-map/store-page.JPG)
 ---
-<!-- ![store item page map](./site-map\store-item-page.JPG) -->
-<img src="./site-map\store-item-page.JPG">
+![store item page map](/site-map/store-item-page.JPG)
 ---
 
 
