@@ -378,3 +378,8 @@ color: antiquewhite;
 .store-item-copyright{
   border: #1f4a07 outset 3px;
 }
+
+#framed-img {
+  width: 125px;
+  height: auto;
+}
