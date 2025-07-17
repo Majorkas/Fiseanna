@@ -8,6 +8,10 @@
     width: 100%;
 
   }
+  #main-display{
+    width: 70%;
+
+  }
 
 
   .main-nav a {
@@ -38,6 +42,10 @@
     background-color: #1e4a07a0;
     margin: 2px;
     padding: 5px;
+  }
+  #main-display{
+    width: 400px;
+
   }
 
 
@@ -250,8 +258,8 @@ background-color: #1e4a078d;
 }
 .shop-item{
   max-width: 300px;
-  max-height: 350px;
-  padding-bottom: 15px;
+  max-height: 225px;
+  /* padding-bottom: 15px; */
   margin: 25px;
   border: #1f4a07 groove 5px;
   background-color: #1f4a07;
@@ -264,8 +272,8 @@ background-color: #1e4a078d;
   color: #F2E8CF
 }
 .shop-img{
-  max-width: 250px;
-  max-height: 300px;
+  max-width: 175px;
+  height: 150px;
 }
 
 .shipping-txt{
@@ -291,7 +299,6 @@ background-color: #1e4a078d;
 }
 #main-display{
   display: block;
-  width: 70%;
   height: auto;
   align-self: center;
   justify-self: center;
