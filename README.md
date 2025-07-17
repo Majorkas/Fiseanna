@@ -60,13 +60,13 @@ making the code alot shorter rather than having to do another if else.
 I then repeated it so that when the user had the add frame selection checked it would swap the main image displaying the item to the framed image and when its not selected it would choose the non framed image.
 
 ## Site Map: 
-![site map](site-map\site-map-fiseanna.JPG)
+![site map](./site-map\site-map-fiseanna.JPG)
 ---
-![index page map](site-map\index-page.JPG)
+![index page map](./site-map\index-page.JPG)
 ---
-![store page map](site-map\store-page.JPG)
+![store page map](./site-map\store-page.JPG)
 ---
-![store item page map](site-map\store-item-page.JPG)
+![store item page map](./site-map\store-item-page.JPG)
 ---
 
 
