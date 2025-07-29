@@ -2,6 +2,19 @@ const menuButton = document.getElementsByClassName('menu-button')
 const mainNav = document.getElementById('main-nav')
 const mottoTxt = document.getElementById('motto-text')
 const COST_CALCULATOR = document.getElementById('item-choice')
+const shipToIreland = 4.99
+const shipToUK = 8.99
+const shipToEurope = 5.50
+const shipToWorld = 9.99
+const importFees = 0.2
+const address = document.getElementById('shipping-location')
+const mainImg = document.getElementById('Main-img');
+const SMALL_PRINT = 6
+const MEDIUM_PRINT = 8
+const LARGE_PRINT = 12
+const XLARGE_PRINT = 16
+const WITH_FRAME = 9.99
+const NO_FRAME = 0
 const IMG_ID_SRC = {
   'Main-img': "images/lake.jpg",
   'smaller-img1': "images/black-castle.jpg",
@@ -11,10 +24,6 @@ const IMG_ID_SRC = {
 }
 
 
-
-
-
-const mainImg = document.getElementById('Main-img');
 function imgSwap(imgSrc) {
   mainImg.src = imgSrc;
 
@@ -32,12 +41,6 @@ function redirectPage() {
     window.location = 'index.html';
   }
 }
-const shipToIreland = 4.99
-const shipToUK = 8.99
-const shipToEurope = 5.50
-const shipToWorld = 9.99
-const importFees = 0.2
-const address = document.getElementById('shipping-location')
 
 function shippingCalcultor(selectedAddress) {
   document.getElementById('drop-selection').innerText = selectedAddress.options[address.selectedIndex].text;
@@ -52,15 +55,8 @@ function shippingCalcultor(selectedAddress) {
     } else if (selection === "4") {
       document.getElementById('calculator-output').innerText = shipToWorld + ' with Import Fees the total will be ' + '€' + ((shipToWorld * importFees)+shipToWorld).toFixed(2);
     }
-
 }
 
-const SMALL_PRINT = 6
-const MEDIUM_PRINT = 8
-const LARGE_PRINT = 12
-const XLARGE_PRINT = 16
-const WITH_FRAME = 9.99
-const NO_FRAME = 0
 function runFullCalculation(event) {
   if (event) {
     event.preventDefault();
@@ -91,8 +87,6 @@ function printPriceF(sizeSelection) {
   }
 }
 
-
-
 function framePriceF(addFrame) {
   const FRAME_PIC = document.getElementById('framed-img').src
   const FRAME_PIC_ALT = document.getElementById('framed-img').alt
@@ -104,23 +98,14 @@ function framePriceF(addFrame) {
   return FRAME;
 }
 
-
 function storeItemInit() {
   menuButton[0].addEventListener('click', () => {
     mainNav.classList.toggle('hidden');
     mottoTxt.classList.toggle('hidden');
-
   });
   COST_CALCULATOR.addEventListener('submit', runFullCalculation)
   runFullCalculation();
-
-
-
 }
-
-
-
-
 
 function initIndex() {
   menuButton[0].addEventListener('click', () => {
@@ -135,24 +120,17 @@ function initIndex() {
     imgElem.addEventListener("touchstart", () => imgSwap(imgSrc) );
     imgElem.addEventListener("touchcancel", imgSwapBack);
   });
-
 }
 
 function initStore() {
  menuButton[0].addEventListener('click', () => {
     mainNav.classList.toggle('hidden');
     mottoTxt.classList.toggle('hidden');
-
  });
   shippingCalcultor(address)
   document.getElementById('shipping-calculator').addEventListener('change', () => shippingCalcultor(address))
-
-
-
 }
 
 function initRedirect() {
-
   setInterval(redirectPage, 1000)
-
 }
